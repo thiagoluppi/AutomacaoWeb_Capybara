@@ -15,6 +15,5 @@ end
 
 Entao("vejo a pagina de detalhes do produto") do
   detalhe = find(".table-data-sheet tbody tr", text: "Short Sleeve")
-  expect(detalhe).to have_text "Short Sleeve"
   expect(detalhe).to be_truthy
 end
